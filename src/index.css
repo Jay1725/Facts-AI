@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-navy-950 text-neutral-100 antialiased;
+  }
+
+  body {
+    @apply font-sans leading-[1.5];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold leading-[1.2] tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-400 ring-offset-2 ring-offset-navy-950;
+  }
+
+  ::selection {
+    background-color: rgb(47 123 255 / 0.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

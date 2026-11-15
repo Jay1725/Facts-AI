@@ -1,0 +1,8 @@
+[functions.verify-report]
+verify_jwt = true
+
+[functions.tavily-test-search]
+verify_jwt = true
+
+[functions.bifrost-health]
+verify_jwt = true
